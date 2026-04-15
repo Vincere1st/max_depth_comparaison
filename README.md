@@ -1,0 +1,1 @@
+This a simple stupid project for find the difference between Symfony Serializer and JMSSerializer

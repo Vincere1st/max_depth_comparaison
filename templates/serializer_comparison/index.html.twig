@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block title %}Serializer Comparison{% endblock %}
+{% block body %}
+    <h1>Serializer Comparison</h1>
+    <div class="container">
+        <div>
+            <h2>Symfony Serializer</h2>
+            <pre>{{ symfonyJson }}</pre>
+        </div>
+        <div>
+            <h2>JMS Serializer</h2>
+            <pre>{{ jmsJson }}</pre>
+        </div>
+    </div>
+{% endblock %}
+
