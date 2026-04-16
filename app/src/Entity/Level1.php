@@ -14,7 +14,7 @@ class Level1 {
     public string $name = "Niveau 1";
 
     #[ORM\OneToOne(targetEntity: Level2::class)]
-    #[JMS\MaxDepth(2)]
+    #[JMS\MaxDepth(1)]
     #[MaxDepth(1)]
     public ?Level2 $level2 = null;
 }

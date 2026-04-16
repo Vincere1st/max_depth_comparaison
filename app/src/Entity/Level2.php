@@ -2,7 +2,8 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Serializer\Attribute\MaxDepth;
+use JMS\Serializer\Annotation as JMS;
+
 
 #[ORM\Entity]
 class Level2 {
@@ -12,6 +13,8 @@ class Level2 {
     #[ORM\Column]
     public string $name = "Niveau 2";
 
+
+    #[JMS\MaxDepth(1)]
     #[ORM\OneToOne(targetEntity: Level3::class)]
     public ?Level3 $level3 = null;
 }
